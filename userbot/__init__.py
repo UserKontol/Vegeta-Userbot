@@ -175,15 +175,15 @@ YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 VEGETA_TEKS_KOSTUM = os.environ.get("VEGETA_TEKS_KOSTUM") or "ㅤ"
 
 # Untuk Melihat Repo
-REPO_NAME = os.environ.get("REPO_NAME") or "🔘Vegeta-Userbot🔘"
+REPO_NAME = os.environ.get("REPO_NAME") or "🔘Adam-Userbot🔘"
 
 # DEVS USERBOT OLNY
 DEVS = (
-    1820233416, # bagas
-    5032617939, # sayo
+    1878075436, # adam
+    1780335957, # dion
     1191668125, # rendy
     1416529201, # tonic
-    1607338903, # kenkan
+    1708159796, # galih
     1663258664, # ikky
     2077108390, # kitaro
     1705562427, # skyzo
@@ -215,7 +215,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "Vegeta-Userbot")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "Adam-Userbot")
 
 # Bot Version
 BOT_VER = os.environ.get("BOT_VER", "9.1")
@@ -423,7 +423,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 async def update_restart_msg(chat_id, msg_id):
     DEFAULTUSER = ALIVE_NAME or "Set `ALIVE_NAME` ConfigVar!"
     message = (
-        f"**🔥Vegeta-Userbot🔥 v{BOT_VER} Sedang berjalan!**\n\n"
+        f"**🔥Adam-Userbot🔥 v{BOT_VER} Sedang berjalan!**\n\n"
         f"**Telethon:** {version.__version__}\n"
         f"**Python:** {python_version()}\n"
         f"**User:** {DEFAULTUSER}"
@@ -505,11 +505,11 @@ with bot:
         async def handler(event):
             await event.message.get_sender()
             text = (
-                f"**Hey**, __I am using__  **🔥Vegeta-Userbot** \n\n"
+                f"**Hey**, __I am using__  **🔥Adam-Userbot** \n\n"
                 f"       __Thanks For Using me__\n\n"
-                f"🔥 **Group Support :** [Support](t.me/VegetaSupports)\n"
+                f"🔥 **Group Support :** [Support](t.me/wibu_telegram)\n"
                 f"🔥 **OWNER :** [Rendy](t.me/rencprx)\n"
-                f"🔥 **Repo :** [Vegeta-Userbot](https://github.com/Randi356/Vegeta-Userbot)\n"
+                f"🔥 **Repo :** [Vegeta-Userbot](https://github.com/userkontol/adam-Userbot)\n"
             )
             await tgbot.send_file(
                 event.chat_id,
@@ -518,16 +518,16 @@ with bot:
                 buttons=[
                     [
                         custom.Button.url(
-                            text="🔥 Repo Vegeta-Userbot 🔥",
-                            url="https://github.com/Randi356/Vegeta-Userbot",
+                            text="🔥 Repo adam-Userbot 🔥",
+                            url="https://github.com/userkontol/adam-Userbot",
                         )
                     ],
                     [
                         custom.Button.url(
-                            text="GROUP", url="https://t.me/VegetaSupports"
+                            text="GROUP", url="https://t.me/wibu_telegram"
                         ),
                         custom.Button.url(
-                            text="CHANNEL", url="https://t.me/RendyProjects"
+                            text="CHANNEL", url="https://t.me/wibu_telegram"
                         ),
                     ],
                 ],
@@ -543,20 +543,20 @@ with bot:
                 result = builder.photo(
                     file=ramlogo,
                     link_preview=False,
-                    text=f"**⚡ inline Vegeta-Userbot ⚡**\n\n⚡ **Owner** [Rendy](t.me/rencprx)\n⚡ **Jumlah** `{len(dugmeler)}` Modules",
+                    text=f"**⚡ inline Adam-Userbot ⚡**\n\n⚡ **Owner** [Adam](t.me/skyiarul)\n⚡ **Jumlah** `{len(dugmeler)}` Modules",
                     buttons=buttons,
                 )
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
-                    description="Repository 🔥Vegeta-Userbot🔥",
+                    description="Repository 🔥Adam-Userbot🔥",
                     url="https://t.me/RendyProjects",
-                    text="**🔥Vegeta-Userbot🔥**\n➖➖➖➖➖➖➖➖➖➖\n⚡ **Owner :** [Rendy](https://t.me/rencprx)\n⚡ **Support :** @VegetaSupports\n⚡ **Repository :** [🔘Vegeta-Userbot🔘](https://github.com/Randi356/Vegeta-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**🔥Adam-Userbot🔥**\n➖➖➖➖➖➖➖➖➖➖\n⚡ **Owner :** [Adam](https://t.me/skyiarul)\n⚡ **Support :** @wibu_telegram\n⚡ **Repository :** [🔘Adam-Userbot🔘](https://github.com/userkontol/adam-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/VegetaSupports"),
+                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/wibu_telegram"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ", "https://github.com/Randi356/Vegeta-Userbot"
+                                "ʀᴇᴘᴏ", "https://github.com/userkontol/adam-Userbot"
                             ),
                         ],
                     ],
@@ -564,15 +564,15 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="🔥 Vegeta-UserBot 🔥",
-                    description="Vegeta-Userbot | Telethon",
-                    url="https://t.me/notsupports",
-                    text=f"**Vegeta-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n⚡ **OWNER:** [Rendy](t.me/rencprx)\n⚡ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @VegetaSupports\n➖➖➖➖➖➖➖➖➖➖",
+                    title="🔥 adam-UserBot 🔥",
+                    description="Adam-Userbot | Telethon",
+                    url="https://t.me/wibu_telegram",
+                    text=f"**Adam-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n⚡ **OWNER:** [adam](t.me/skyiarul)\n⚡ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @wibu_telegram\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/RendyProejcts"),
+                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/wibu_telegram"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ", "https://github.com/Randi356/Vegeta-Userbot"
+                                "ʀᴇᴘᴏ", "https://github.com/userkontol/adam-Userbot"
                             ),
                         ],
                     ],
@@ -606,24 +606,24 @@ with bot:
                 result = builder.photo(
                     file=ramlogo,
                     link_preview=False,
-                    text=f"🔥Vegeta-Userbot🔥\n\n⚡**Owner : [Rendy](t.me/CuteInspire)**\n\n⚡ **Bot Ver :** `9.1`\n✨ **𝗠odules :** `{len(dugmeler)}`",
+                    text=f"🔥adam-Userbot🔥\n\n⚡**Owner : [Adam](t.me/skyiarul)**\n\n⚡ **Bot Ver :** `9.1`\n✨ **𝗠odules :** `{len(dugmeler)}`",
                     buttons=buttons,
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "Bantuan Dari 🔥Vegeta-Userbot🔥 ",
+                    "Bantuan Dari 🔥Adam-Userbot🔥 ",
                     text="Daftar Plugins",
                     buttons=[],
                     link_preview=True)
             else:
                 result = builder.article(
-                    " 🔥Vegeta-Userbot🔥 ",
-                    text="""**🔥Vegeta-Userbot\n\n Anda Bisa Membuat Vegeta Userbot Anda Sendiri Dengan Cara:** __TEKEN DIBAWAH INI!__ 👇""",
+                    " 🔥Adam-Userbot🔥 ",
+                    text="""**🔥Adam-Userbot\n\n Anda Bisa Membuat Adam Userbot Anda Sendiri Dengan Cara:** __TEKEN DIBAWAH INI!__ 👇""",
                     buttons=[
                         [
                             custom.Button.url(
-                                "🔥Vegeta-Userbot🔥",
-                                "https://github.com/Randi356/Vegeta-Userbot"),
+                                "🔥adam-Userbot🔥",
+                                "https://github.com/userkontol/adam-Userbot"),
                             custom.Button.url(
                                 "OWNER",
                                 "t.me/rencprx")]],
@@ -663,9 +663,9 @@ with bot:
                     buttons=[
                         [
                             Button.url("📢 Channel Support",
-                                       "t.me/RendyProjects"),
+                                       "t.me/wibu_telegram"),
                             Button.url("👥 Group support",
-                                       "t.me/VegetaSupports")],
+                                       "t.me/wibu_telegram")],
                         [Button.inline("Open Menu", data="nepo")],
                         [custom.Button.inline(
                             "Close", b"close")],
